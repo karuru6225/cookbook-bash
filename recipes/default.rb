@@ -7,16 +7,29 @@
 # All rights reserved - Do Not Redistribute
 #
 
-cookbook_file "/etc/profile.d/my_bash_setting.sh" do
-	owner "root"
-	group "root"
-	mode "0644"
-	source "my_bash_setting.sh"
-end
-
 file "/etc/skel/.bash_history" do
 	owner "root"
 	group "root"
 	mode "0644"
-	content ""
+end
+
+cookbook_file "/etc/skel/.bash_logout" do
+	owner 'root'
+	group 'root'
+	mode '0644'
+	source 'bash_logout'
+end
+
+cookbook_file "/etc/skel/.bash_profile" do
+	owner 'root'
+	group 'root'
+	mode '0644'
+	source 'bash_profile'
+end
+
+cookbook_file "/etc/skel/.bashrc" do
+	owner 'root'
+	group 'root'
+	mode '0644'
+	source 'bashrc'
 end
