@@ -104,5 +104,4 @@ if [ ! -f ~/.ssh/authorized_keys ];then
 	chmod 600 ~/.ssh/authorized_keys
 fi
 
-source ~/.bash_colors
-PS1="${BBlue}\u${BWhite}@${BPurple}\h${BWhite}:${BBlue}\w${White}\n$ "
+#PS1="${BBlue}\u${BWhite}@${BPurple}\h${BWhite}:${BBlue}\w${White}\n$ "
